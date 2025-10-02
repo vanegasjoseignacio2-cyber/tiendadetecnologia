@@ -1,0 +1,96 @@
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto ;
+    padding: 50px;
+    background-color: #ffffff;
+    transition: 0.3s;;
+}
+
+.presentacion h1 {
+    font-size: 60px;
+    color: blue;
+}
+.presentacion p {
+    font-size: 40px;
+    color: #333;
+    text-align: center;
+    max-width: auto;
+}
+.presentacion:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18), 0 1.5px 3px rgba(0,0,0,0.08);
+    transform: translateY(-10px) scale(1.02);
+    background-color: rgba(255, 255, 255, 0.95);
+    border-color: #0074d9;
+    transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s, border-color 0.3s;
+}
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    background-color: #ffffff;
+    transition: 0.3s;
+    border-radius: 25px;
+}
+
+.producto {
+    flex: 0 1 calc(33% - 40px);
+    box-shadow: #0074d9 0px 10px 20px -10px;
+    text-align: center;
+    border-radius: 10px;
+    background: #ffffff;
+    padding: 20px;
+    transition: 0.3s
+    border radius 10px;
+    border: 2px solid transparent;
+
+
+}
+.producto h2 {
+    font-size: 55px;
+    color: #0088ff;
+    text-align: center;
+    margin: 10px 0;
+}
+.producto p {
+    font-size: 40px;
+    color: #555;
+    text-align: center;
+    margin: 5px 0;
+    color: #555;
+}
+.producto button {
+    background-color: #0074d9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px auto;
+    display: block;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.producto img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    gap: 10px;
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+}
+.producto button:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+.producto:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18), 0 1.5px 3px rgba(0,0,0,0.08);
+    transform: translateY(-10px) scale(1.02);
+    background-color: rgba(87, 196, 255, 0.95);
+    border-color: #0074d9;
+    transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s, border-color 0.3s;
+}
