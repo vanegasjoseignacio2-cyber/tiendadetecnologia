@@ -3,6 +3,9 @@
     scroll-behavior: smooth;
     scrollbar-color:#0033ff #ffffff;
  }
+ html :hover{
+    scrollbar-color:#d9ff00 #ffffff;
+ }
 body {
     background-color: white;
     margin: 0;
