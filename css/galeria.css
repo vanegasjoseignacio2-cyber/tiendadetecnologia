@@ -1,4 +1,7 @@
-
+     html{
+    scroll-behavior: smooth;
+    scrollbar-color:#0033ff #ffffff;
+ }
 
 body {
     background-color: white;
