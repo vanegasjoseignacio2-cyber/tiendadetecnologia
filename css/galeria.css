@@ -142,13 +142,13 @@ footer a:hover {
     header nav ul {
         display: none;
         flex-direction: column;
-        background: #00c3ff;
+        background: rgba(0, 0, 0, 0.715);
         position: absolute;
-        top: 70px;
-        right: 10px;
-        width: 200px;
-        padding: 10px;
-        border-radius: 0 0 12px 12px;
+        top: 50px;
+        right: 25px;
+        padding: 8px;
+        border-radius: 8px;
+        box-shadow: 2px 6px 10px rgba(0,0,0,0.5);
     }
 
     header nav ul li {
