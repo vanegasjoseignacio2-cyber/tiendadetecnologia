@@ -24,7 +24,7 @@
                 </ul>
             </nav>
     
-                <div class="cart-icon">
+                <div class="cart-icon" id="carrito">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <span id="cart-count">0</span>
                 </div>
@@ -42,28 +42,28 @@
             <h2>Portatil Asus tuf</h2>
             <p>Computador de escritorio: Potente equipo para gaming y diseño gráfico, con tarjeta gráfica dedicada y monitor de 24</p>
             <p>Precio: $2'800'000</p>
-            <button>Comprar</button>
+            <button class="comprar">Comprar</button>
         </div>
         <div class="producto">
             <img src="../img/portatil-lenovo-15,6-pulgadas-ram-8gb-win-11-1.webp" alt="Producto 2">
             <h2>Portail lenovo</h2>
             <p>Computador portátil: Ideal para trabajo y estudio, con procesador Intel Core i5, 8GB RAM y 512GB SSD</p>
             <p>Precio: $1'600'000</p>
-            <button>Comprar</button>
+            <button class="comprar">Comprar</button>
         </div>
         <div class="producto">
             <img src="../img/Celular-xiaomi-redmi-9a-32gb-aldnet-tienda-virtual-001.jpeg" alt="Producto 3">
             <h2>xiaomi 19</h2>
             <p>Smartphone: Teléfono inteligente con cámara de alta resolución y batería de larga duración</p>
             <p>Precio: $800'000</p>
-            <button>Comprar</button>
+            <button class="comprar">Comprar</button>
         </div>
         <div class="producto">
             <img src="../img/images.jpeg" alt="Producto 3">
             <h2>Impresora canon </h2>
             <p>Impresora multifuncional: Imprime, escanea y copia documentos fácilmente desde tu hogar </p>
             <p>Precio: $1'200'000</p>
-            <button>Comprar</button>
+            <button class="comprar">Comprar</button>
         </div>
     </div>
     
@@ -75,5 +75,23 @@
         <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
         <a href="#"><i class="fa-brands fa-instagram"></i></a>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () =>{
+    const comprar = document.querySelectorAll(".comprar");
+    const carrito = document.getElementById("carrito");
+    const contador = document.getElementById("cart-count");
+
+    let cantidad = 0;
+
+    comprar.forEach(boton => {
+        boton.addEventListener("click", () =>{
+            cantidad++;
+            contador.textContent = cantidad;
+
+            carrito.classList.add("mostrar");
+        });
+    });
+});
+    </script>
 </body>
 </html>
