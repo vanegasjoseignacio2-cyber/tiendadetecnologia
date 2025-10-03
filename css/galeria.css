@@ -1,7 +1,4 @@
-     html{
-    scroll-behavior: smooth;
-    scrollbar-color:#0033ff #ffffff;
- }
+
 
 body {
     background-color: white;
@@ -60,8 +57,9 @@ header nav ul li a:hover {
 h1{
     text-align: center;
     color: #00c3ff;
-    margin: 30px 0 10px;
-    padding: 80px;
+    font-size: 40px;
+    margin: 70px 0 20px;
+    padding: 100px;
     
 }
 
@@ -87,8 +85,7 @@ h1{
 
 .galeria img:hover {
       transform: scale(1.05);
-      box-shadow: 2px 10px 12px rgba(0, 0, 255, 0.46);
-    }
+}
 #menu-toggle {
     display: none;
 }
@@ -98,6 +95,7 @@ h1{
     cursor: pointer;
     color: #fff;
     margin-left: auto;
+    margin-right: 30px;
 }
 
 footer {
@@ -107,7 +105,7 @@ footer {
     text-align: center;
     width: 100%;
     box-shadow: -1px -10px 10px rgb(115, 110, 183);
-    margin-top: auto; /* 🔹 empuja el footer abajo */
+    margin-top: auto; 
 }
 footer a {
   color: #fff;
@@ -138,37 +136,36 @@ footer a:hover {
         height: 50px;
     }
 
-    /* Esconde menú normal en móvil */
     header nav ul {
-        display: none;
-        flex-direction: column;
-        background: #00c3ff;
-        position: absolute;
-        top: 70px;
-        right: 10px;
-        width: 200px;
-        padding: 10px;
-        border-radius: 0 0 12px 12px;
-    }
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.715);
+    position: absolute;
+    top: 50px;
+    right: 25px;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 2px 6px 10px rgba(0,0,0,0.5);
+  }
 
+    
     header nav ul li {
         margin: 10px 0;
         text-align: center;
     }
 
-    /* Mostrar hamburguesa */
+   
     .menu-icon {
         display: block;
         position: absolute;
         right: 40px;
     }
 
-    /* Al hacer click en el menú hamburguesa */
     #menu-toggle:checked + .menu-icon + nav ul {
         display: flex;
     }
 
-    /* Galería más compacta */
+   
     .galeria {
         grid-template-columns: 1fr;
         padding: 15px;
@@ -184,7 +181,6 @@ footer a:hover {
         font-size: 24px;
         padding: 60px 15px;
         text-align: center;
-        position: ab;
     }
     
 }
