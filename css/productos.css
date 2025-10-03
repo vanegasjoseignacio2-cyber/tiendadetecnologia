@@ -19,9 +19,6 @@ header {
     left: 0;
     z-index: 100;
 }
-header nav{
-    margin-left: 800px;
-}
 header .logo img {
     height: 60px;
     width: auto;
