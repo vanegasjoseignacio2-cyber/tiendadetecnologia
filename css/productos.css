@@ -67,15 +67,16 @@ header nav ul li a:hover {
     margin-top: 100px;
     padding: 50px;
     background-color: #ffffff;
-    transition: 0.3s;;
+    transition: 0.3s;
+
 }
 
 .presentacion h1 {
-    font-size: 80px;
+    font-size: 50px;
     color: blue;
 }
 .presentacion p {
-    font-size: 40px;
+    font-size: 25px;
     color: #333;
     text-align: center;
     max-width: auto;
@@ -113,13 +114,13 @@ header nav ul li a:hover {
 
 }
 .producto h2 {
-    font-size: 55px;
+    font-size: 40px;
     color: #0088ff;
     text-align: center;
     margin: 10px 0;
 }
 .producto p {
-    font-size: 40px;
+    font-size: 28px;
     color: #555;
     text-align: center;
     margin: 5px 0;

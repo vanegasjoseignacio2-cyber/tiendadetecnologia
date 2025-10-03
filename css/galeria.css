@@ -84,6 +84,7 @@ h1{
 
 .galeria img:hover {
       transform: scale(1.05);
+      box-shadow: 2px 10px 12px rgba(0, 0, 255, 0.46);
     }
 #menu-toggle {
     display: none;
