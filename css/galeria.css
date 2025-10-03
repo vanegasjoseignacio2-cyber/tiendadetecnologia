@@ -57,6 +57,8 @@ header nav ul li a:hover {
 h1{
     text-align: center;
     color: #00c3ff;
+    margin: 30px 0 10px;
+    padding: 80px;
     
 }
 
@@ -121,4 +123,64 @@ footer a:hover {
   color: #000000;
   border-color: #000000;
   transform: scale(1.1);
+}
+
+@media (max-width: 768px){
+    header {
+        padding: 20px 15px;
+    }
+
+    header .logo img {
+        height: 50px;
+    }
+
+    /* Esconde menú normal en móvil */
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        background: #00c3ff;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        width: 200px;
+        padding: 10px;
+        border-radius: 0 0 12px 12px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /* Mostrar hamburguesa */
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 40px;
+    }
+
+    /* Al hacer click en el menú hamburguesa */
+    #menu-toggle:checked + .menu-icon + nav ul {
+        display: flex;
+    }
+
+    /* Galería más compacta */
+    .galeria {
+        grid-template-columns: 1fr;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .galeria img {
+        max-height: 350px;
+    
+    }
+
+    h1 {
+        font-size: 24px;
+        padding: 60px 15px;
+        text-align: center;
+        position: ab;
+    }
+    
 }
