@@ -64,7 +64,7 @@ header nav ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin:auto ;
+    margin-top: 100px;
     padding: 50px;
     background-color: #ffffff;
     transition: 0.3s;
@@ -86,6 +86,7 @@ header nav ul li a:hover {
     transform: translateY(-10px) scale(1.02);
     background-color: rgba(255, 255, 255, 0.95);
     border-color: #0074d974;
+    
     transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s, border-color 0.3s;
 }
 .productos {
@@ -183,4 +184,84 @@ footer a:hover {
   color: #000000;
   border-color: #000000;
   transform: scale(1.1);
+}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    /* 🔹 Header */
+    header {
+        padding: 8px 15px;
+    }
+
+    header .logo img {
+        height: 50px;
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        background: blue;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        padding: 10px 0;
+        border-radius: 0 0 10px 10px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    #menu-toggle:checked + nav ul {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .presentacion {
+        padding: 30px 15px;
+    }
+
+    .presentacion h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .presentacion p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* 🔹 Productos */
+    .productos {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .producto {
+        flex: 0 1 100%;
+        padding: 15px;
+    }
+
+    .producto img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .producto h2 {
+        font-size: 28px;
+    }
+
+    .producto p {
+        font-size: 20px;
+    }
+
+    .producto button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
 }
